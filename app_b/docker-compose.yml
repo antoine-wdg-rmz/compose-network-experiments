@@ -1,0 +1,12 @@
+version: '2.3'
+services:
+  hello_client:
+    image: byrnedo/alpine-curl
+    command: 'curl hello_server:80'
+    networks:
+    - default
+    - app_a_network
+
+networks:
+  app_a_network:
+    external: true

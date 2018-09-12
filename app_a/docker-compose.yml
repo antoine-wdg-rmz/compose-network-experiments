@@ -1,0 +1,9 @@
+version: '2.3'
+
+services:
+  hello_server:
+    image: tutum/hello-world
+
+networks:
+  default:
+    name: app_a_network
